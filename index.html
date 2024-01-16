@@ -1,66 +1,192 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
 
-      <title>Responsive bakery website - Bedimcode</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         
-      </header>
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            
-         </section>
+   <title>Responsive bakery website - Bedimcode</title>
+</head>
 
-         <!--==================== NEWS ====================-->
-         <section class="new section" id="new">
-            
-         </section>
+<body translate="no">
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">Bakery</a>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            
-         </section>
-         
-         <!--==================== FAVORITES ====================-->
-         <section class="favorite section" id="favorite">
-            
-         </section>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home" class="nav__link">Home</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#news" class="nav__link">News</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#about" class="nav__link">About Us</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#favorite" class="nav__link">Favorites</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#visit" class="nav__link">Location</a>
+               </li>
+            </ul>
 
-         <!--==================== VISIT ====================-->
-         <section class="visit section" id="visit">
-            
-         </section>
-      </main>
+            <!-- close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         
-      </footer>
+            <img src="assets/img/bread-4.png" alt="image" class="nav__img-1">
+            <img src="assets/img/bread-1.png" alt="image" class="nav__img-2">
 
-      <!--========== SCROLL UP ==========-->
-      
+         </div>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+         <!-- toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <img src="assets/img/home-bg.jpg" alt="image" class="home__bg">
+         <div class="home__shadow"></div>
+
+         <div class="home__container container grid">
+            <div class="home__data">
+               <h1 class="home__title">
+                  Select The Best <br> Quality Breads
+               </h1>
+
+               <a href="#" class="button">Select Breads</a>
+
+               <img src="assets/img/bread-1.png" alt="image" class="home__bread">
+            </div>
+
+            <div class="home__image">
+               <img src="assets/img/home-bread.png" alt="image" class="home__img">
+            </div>
+
+            <footer class="home__footer">
+               <div class="home__location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Calle 49b #34-04 <br> Cali Colombia </span>
+               </div>
+
+               <div class="home__social">
+                  <a href="https://www.facebook.com/" target="_blank">
+                     <i class="ri-facebook-circle-line"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+                  <a href="https://www.youtube.com/" target="_blank">
+                     <i class="ri-youtube-line"></i>
+                  </a>
+               </div>
+            </footer>
+         </div>
+      </section>
+
+      <!--==================== NEWS ====================-->
+      <section class="new section" id="new">
+         <h2 class="section__title">New Breads</h2>
+
+         <div class="new__container container grid">
+            <div class="new__content grid">
+               <!-- article 1 -->
+               <article class="new__card">
+                  <div class="new__data">
+                     <h2 class="new__title">Rye Bread</h2>
+                     <p class="new__description">
+                        Baked with healthy, gluten-free
+                        sourdough for good nutrition.
+                     </p>
+                  </div>
+
+                  <img src="assets/img/new-bread-1.png" alt="image" class="new__img">
+               </article>
+
+               <!-- article 2 -->
+               <article class="new__card">
+                  <div class="new__data">
+                     <h2 class="new__title">Whole Grain Bread</h2>
+                     <p class="new__description">
+                        Crispy and homemade prepared
+                        from organic yeast-free flour.
+                     </p>
+                  </div>
+
+                  <img src="assets/img/new-bread-2.png" alt="image" class="new__img">
+               </article>
+
+               <!-- article 3 -->
+               <article class="new__card">
+                  <div class="new__data">
+                     <h2 class="new__title">Multigrain Bread</h2>
+                     <p class="new__description">
+                        Tasty and made with different
+                        natural grains from the countryside.
+                     </p>
+                  </div>
+
+                  <img src="assets/img/new-bread-3.png" alt="image" class="new__img">
+               </article>
+            </div>
+
+            <a href="#" class="new__button button">See More Breads</a>
+         </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h2 class="section__title">About Us</h2>
+
+               <p class="about__description"></p>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== FAVORITES ====================-->
+      <section class="favorite section" id="favorite">
+
+      </section>
+
+      <!--==================== VISIT ====================-->
+      <section class="visit section" id="visit">
+
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src=""></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+
 </html>
